@@ -24,3 +24,4 @@ class Address(Base):
 
     user_id: Mapped[int] = mapped_column(Integer, ForeignKey('users.id'))
     user: Mapped["User"] = relationship(back_populates="address")
+    
